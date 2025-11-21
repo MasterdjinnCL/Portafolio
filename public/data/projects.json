@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Examen Módulo 7 - E-commerce",
+    "description": "Proyecto examen que implementa un prototipo de tienda con catálogo, búsqueda y carrito.",
+    "imageUrl": "/images/gallery/thumbs/01.jpg",
+    "details": "Desarrollado como examen del módulo, este prototipo de e-commerce incluye listado de productos, vista de detalle, carrito de compras y filtrado básico. Está construido con Vue para la interfaz y JavaScript para la lógica, con un enfoque en maquetación responsiva y experiencia de usuario mínima viable. Ideal como demostración de conceptos de comercio electrónico en un entorno educativo.",
+    "technologies": ["HTML", "Vue", "JavaScript", "CSS"],
+    "repoUrl": "https://github.com/bootcampunab2025/examenmodulo7",
+    "liveUrl": "https://bootcampunab2025.github.io/examenmodulo7/"
+  },
+  {
+    "id": 2,
+    "title": "Tienda Online - Prototipo Tecno Chile",
+    "description": "Prototipo funcional de tienda en línea con catálogo, carrito persistente y formulario de contacto.",
+    "imageUrl": "/images/gallery/thumbs/02.jpg",
+    "details": "Proyecto final del módulo que implementa un catálogo filtrable, manejo de carrito usando LocalStorage, validaciones de formulario y diseño mobile-first. Está construido con HTML, CSS y JavaScript puro y pone énfasis en accesibilidad básica, rendimiento y una UI limpia para mostrar productos ficticios.",
+    "technologies": ["HTML5", "JavaScript ES6", "CSS3", "LocalStorage"],
+    "repoUrl": "https://github.com/bootcampunab2025/tienda-online",
+    "liveUrl": "https://bootcampunab2025.github.io/tienda-online/"
+  },
+  {
+    "id": 3,
+    "title": "Tienda-vue - Evaluación M6",
+    "description": "Tienda online implementada con Vue, enfocada en componentes reutilizables y navegación entre vistas.",
+    "imageUrl": "/images/gallery/thumbs/03.jpg",
+    "details": "Tienda construida mayoritariamente en Vue con componentes para tarjetas de producto, carrito y filtros. El proyecto demuestra separación de responsabilidades, uso de props y eventos para comunicación entre componentes y enfoque en experiencia responsiva. Ideal como base para añadir persistencia y autenticación en futuras iteraciones.",
+    "technologies": ["Vue", "JavaScript", "HTML"],
+    "repoUrl": "https://github.com/bootcampunab2025/Tienda-vue",
+    "liveUrl": "#"
+  },
+  {
+    "id": 4,
+    "title": "Pulgastore - Catálogo Estático",
+    "description": "Sitio estático tipo catálogo realizado como ejercicio personal con foco en maquetación.",
+    "imageUrl": "/images/gallery/thumbs/04.jpg",
+    "details": "Proyecto front-end estático centrado en presentación de productos y diseño visual, construido con HTML y CSS. Enfocado en estructura semántica, responsive layout y composición visual para mostrar items de catálogo en diferentes tamaños de pantalla.",
+    "technologies": ["HTML5", "CSS3"],
+    "repoUrl": "https://github.com/MasterdjinnCL/pulgastore",
+    "liveUrl": "#"
+  },
+  {
+    "id": 5,
+    "title": "Te-lo-vendo - Landing y Catálogo (SCSS)",
+    "description": "Landing page y catálogo con arquitectura de estilos en SCSS y componentes reutilizables.",
+    "imageUrl": "/images/gallery/thumbs/05.jpg",
+    "details": "Proyecto que utiliza SCSS para organizar estilos de forma modular (patrón SASS 7-1 u organización similar). Incluye componentes para tarjetas de producto, secciones tipo landing, modales y formularios, con atención a mantenibilidad y reutilización de variables y mixins.",
+    "technologies": ["HTML5", "SCSS", "CSS"],
+    "repoUrl": "https://github.com/bootcampunab2025/te-lo-vendo",
+    "liveUrl": "#"
+  },
+  {
+    "id": 6,
+    "title": "M3AE4 - ABP4 (Maquetación con SCSS)",
+    "description": "Proyecto centrado en maquetación y estilos avanzados usando SCSS como principal tecnología.",
+    "imageUrl": "/images/gallery/thumbs/06.jpg",
+    "details": "Repositorio orientado a ejercicios de maquetación y diseño con SCSS. Contiene estructuras de layout, componentes estilizados y ejemplos de uso de variables, anidamiento y mixins para mantener estilos consistentes y modularizados.",
+    "technologies": ["SCSS", "HTML"],
+    "repoUrl": "https://github.com/MasterdjinnCL/M3AE4---ABP4",
+    "liveUrl": "#"
+  },
+  {
+    "id": 7,
+    "title": "M3AE4 - ABPRO4 (SCSS + JS)",
+    "description": "Sitio con estilos en SCSS y comportamientos interactivos con JavaScript para componentes dinámicos.",
+    "imageUrl": "/images/gallery/thumbs/07.jpg",
+    "details": "Desarrollo enfocado en crear componentes UI con SCSS para estilos y JavaScript para interactividad. Incluye ejemplos de acordeones, modales y pequeñas interacciones que mejoran la experiencia de usuario, manteniendo la separación entre estructura, estilos y comportamiento.",
+    "technologies": ["SCSS", "HTML", "JavaScript"],
+    "repoUrl": "https://github.com/MasterdjinnCL/M3AE4---ABPRO4",
+    "liveUrl": "#"
+  },
+  {
+    "id": 8,
+    "title": "Pulgastein - Catálogo (Ejercicio)",
+    "description": "Catálogo estático con atención a la presentación visual y layout responsive.",
+    "imageUrl": "/images/gallery/thumbs/08.jpg",
+    "details": "Proyecto sencillo orientado a presentar productos en un layout responsivo. Construido con HTML y CSS, útil para mostrar habilidades de maquetación y composición visual en distintos dispositivos.",
+    "technologies": ["HTML", "CSS"],
+    "repoUrl": "https://github.com/bootcampunab2025/pulgastein",
+    "liveUrl": "#"
+  },
+  {
+    "id": 9,
+    "title": "Pulgastore - Repositorio Demo",
+    "description": "Repositorio de ejemplo con enfoque en maquetación HTML estática.",
+    "imageUrl": "/images/gallery/thumbs/09.jpg",
+    "details": "Repositorio con contenido estático HTML para mostrar ejemplos de estructura y estilos. Ideal como referencia o punto de partida para pequeñas demos y prácticas de maquetación.",
+    "technologies": ["HTML"],
+    "repoUrl": "https://github.com/bootcampunab2025/pulgastore",
+    "liveUrl": "#"
+  }
+]
+
