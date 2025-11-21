@@ -1,4 +1,22 @@
 import { defineNuxtConfig } from 'nuxt/config';
+import { readFileSync } from 'node:fs';
+
+
+const isGithubPages = process.env.DEPLOY_TARGET === 'GH_PAGES' || process.env.GITHUB_PAGES === 'true';
+const repositoryName = 'Portafolio';
+const baseURL = process.env.NUXT_APP_BASE_URL || (isGithubPages ? `/${repositoryName}/` : '/');
+
+let projectRoutes: string[] = [];
+try {
+  const projectsData = JSON.parse(
+    readFileSync(new URL('./public/data/projects.json', import.meta.url), 'utf-8')
+  );
+  projectRoutes = Array.isArray(projectsData)
+    ? projectsData.map((project: { id: string | number }) => `/projects/${project.id}`)
+    : [];
+} catch (error) {
+  console.warn('[nuxt.config] No se pudieron leer las rutas de projects.json', error);
+}
 
 
 export default defineNuxtConfig({
@@ -34,6 +52,8 @@ export default defineNuxtConfig({
   
   
   app: {
+    baseURL,
+    buildAssetsDir: 'assets',
     head: {
       title: 'Juan Pablo Berrios - Portafolio Frontend Trainee',
       htmlAttrs: {
@@ -64,7 +84,7 @@ export default defineNuxtConfig({
   
   runtimeConfig: {
     public: {
-      apiBase: process.env.API_BASE_URL || '/data',
+      apiBase: process.env.NUXT_PUBLIC_API_BASE || `${baseURL}data`,
       contactEndpoint: 'https://formspree.io/f/tu-form-id',
       cvUrl: '#'
     }
@@ -76,13 +96,17 @@ export default defineNuxtConfig({
   },
   
   
+  routeRules: {
+    '/**': { prerender: true }
+  },
+
   nitro: {
     
     compatibilityDate: '2025-11-09',
-    preset: 'vercel',
+    preset: isGithubPages ? 'github-pages' : 'vercel',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/projects']
+      routes: ['/', '/projects', ...projectRoutes]
     }
   }
 })
